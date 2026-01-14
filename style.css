@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Cairo", sans-serif;
   background-color: #f8f9fa;
-  overflow-x: hidden;
 }
 
 /* Hero Section Style */
@@ -358,6 +362,7 @@ body {
 
   .about-text {
     text-align: center;
+    max-height: 250px !important;
   }
 
   .about-title {
@@ -390,7 +395,7 @@ body {
   border-radius: 20px;
   position: relative;
   cursor: pointer;
-  height: 320px; /* ارتفاع ثابت */
+  height: 320px;
 }
 
 .service-media img,
